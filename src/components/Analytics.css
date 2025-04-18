@@ -1,0 +1,148 @@
+/* General Container Styling */
+.analytics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+}
+
+/* Title Styling */
+.analytics-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Upload Section Styling */
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.upload-input {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.upload-input:hover,
+.upload-input:focus {
+  border-color: #0056b3;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Graphs Section Styling */
+.analytics-graphs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add spacing between graphs */
+  width: 100%;
+  max-width: 800px; /* Center graphs in a container */
+}
+
+.graph-container {
+  width: 100%;
+}
+
+.graph-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  margin: 0 auto; /* Center the graph container */
+}
+
+.graph-wrapper:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.graph-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graph-heading {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Adjust graph size */
+.graph-box > div {
+  max-width: 100%;
+  height: 300px !important; /* Reduce graph height */
+}
+
+/* Prediction Box Styling */
+.prediction-box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff3cd;
+  font-size: 1.2rem;
+  color: #856404;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.prediction-box:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .analytics-title {
+    font-size: 2rem;
+  }
+
+  .upload-input {
+    width: 250px;
+  }
+
+  .graph-heading {
+    font-size: 1rem;
+  }
+
+  .graph-box > div {
+    height: 250px !important; /* Adjust graph height for mobile */
+  }
+
+  .prediction-box {
+    font-size: 1rem;
+  }
+}

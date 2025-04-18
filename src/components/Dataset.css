@@ -1,0 +1,46 @@
+.dataset-container {
+    padding: 2rem;
+    background-color: #f9fafe;
+    border-radius: 16px;
+    max-width: 900px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 50, 0.05);
+  }
+  
+  .dataset-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: #004c99;
+    text-align: center;
+  }
+  
+  .dataset-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .dataset-section {
+    margin-bottom: 1.8rem;
+  }
+  
+  .dataset-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #005ea5;
+  }
+  
+  .dataset-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .dataset-list li {
+    margin-bottom: 0.6rem;
+  }
+  
