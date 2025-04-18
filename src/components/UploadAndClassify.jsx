@@ -13,7 +13,7 @@ export default function UploadAndClassify() {
   const handleUpload = async () => {
     const formData = new FormData();
     formData.append('file', file);
-    const res = await axios.post('http://localhost:5000/process', formData);
+    const res = await axios.post('https://bci-project-server.onrender.com/process', formData);
     setGraphs(res.data.graphs);
     setFeatures(res.data.features);
     setPrediction(res.data.prediction);
