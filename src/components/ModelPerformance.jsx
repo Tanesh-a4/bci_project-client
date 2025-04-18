@@ -1,5 +1,5 @@
 import React from 'react';
-import './ModelPerformance.css';
+import './modelPerformance.css';
 import confusion from '../assets/confusion_matrix.png';
 import roc from '../assets/roc_curve.png';
 import report from '../assets/classification_report.png';
